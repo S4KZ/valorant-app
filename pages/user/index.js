@@ -11,7 +11,7 @@ const HSicon = require('../../assets/img/hs.png');
 const Ouroicon = require('../../assets/img/ouro.png');
 const Plat = require('../../assets/img/plat.png');
 const Control = require('../../assets/img/control.png');
-const Carrer = require('../../assets/img/carrer.png');
+const Clip = require('../../assets/img/clip.gif');
 
 export default function User() {
 
@@ -101,15 +101,13 @@ export default function User() {
                 Função mais jogada e com maior taxa d vitória
                 </Text>
               </View>
-              <Text style={{ ...styles.title, textAlign: 'center' }}>CARREIRA</Text>
-              <Image source={Carrer}/>
 
+                <View style={styles.card2}>
+                  <Text style={{ ...styles.title, textAlign: 'center', color: '#000000' }}>MELHOR JOGADA DA SEMANA</Text>
+                  <Image source={Clip} style={styles.carrer}/>
+                </View>
 
             </View>
-
-
-
-
           </View>
         </View>
       </ScrollView>
@@ -149,6 +147,13 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     // backgroundColor: '#fffbf5',
     backgroundColor: '#53212b',
+    bottom: 120,
+  },
+  card2: {
+    width: '100%',
+    padding: 25,
+    backgroundColor: '#fffbf5',
+    // backgroundColor: '#53212b',
     bottom: 120,
   },
   box: {
@@ -200,6 +205,10 @@ const styles = StyleSheet.create({
     width: "100%",
     resizeMode: 'contain',
   },
-
+  carrer: {
+    resizeMode: 'contain',
+    height: 300,
+    width: '100%'
+  },
 
 });
