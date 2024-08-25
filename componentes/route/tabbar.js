@@ -22,11 +22,11 @@ export default function TabBar() {
             tabBarStyle: {
                 position: 'absolute',
                 padding: 5,
-                bottom: 40,
+                bottom:  '3%',
                 left: 50,
                 right: 50,
                 borderRadius: 35,
-                height: 80,
+                height: 70,
                 shadowColor: '#000',
                 shadowOffset: { width: 2, height: 10 },
                 shadowOpacity: 0.90,

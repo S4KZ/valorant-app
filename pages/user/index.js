@@ -100,7 +100,7 @@ export default function User() {
 
               <View style={styles.carta}>
                 <Text style={{ ...styles.titleB, textAlign: 'center' }}>MELHOR FUNÇÃO</Text>
-                <Image source={Control} style={styles.icon} />
+                <Image source={Control} style={{...styles.icon,height: 190, width: "90%", }} />
                 <Text style={{ ...styles.titleB, textAlign: 'center', fontSize: 33 }}>CONTROLADOR</Text>
                 <Text style={{ ...styles.subtitleB, textAlign: 'center' }}>
                 Função mais jogada e com maior taxa d vitória
@@ -170,6 +170,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fffbf5',
     padding: 10,
     margin: 10,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   containerFlex: {
     display: 'flex',
