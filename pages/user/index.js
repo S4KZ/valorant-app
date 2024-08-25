@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, ScrollView } from 'react-native';
 import { useLoadFonts } from '../../componentes/fonts';
 
-const Wall = require('../../assets/img/VALORANT_Jett.jpg');
+const Wall = require('../../assets/img/jettGif.gif');
 const UserI = require('../../assets/img/user.png');
 const Omenicon = require('../../assets/img/omenicon.png');
 const Jetticon = require('../../assets/img/jetticon.png');
@@ -42,8 +42,13 @@ export default function User() {
             </View>
           </View>
           <View style={styles.box}>
-            <Text style={{ ...styles.title, textAlign: 'center' }}>ESTATÍSTICAS DE AGENTE</Text>
-            <View style={styles.containerFlex}>
+          <View style={styles.containerFlex}>
+          <View style={styles.card2}>
+                  <Text style={{ ...styles.title, textAlign: 'center', color: '#000000' }}>MELHOR JOGADA DA SEMANA</Text>
+                  <Image source={Clip} style={styles.carrer}/>
+                </View>
+            <Text style={{ ...styles.title, textAlign: 'center', marginTop: 10 }}>ESTATÍSTICAS DE AGENTE</Text>
+            
               <View style={styles.carta}>
                 <Text style={{ ...styles.titleB, textAlign: 'center' }}>MAIS JOGADO</Text>
                 <Image source={Omenicon} style={styles.icon} />
@@ -102,10 +107,7 @@ export default function User() {
                 </Text>
               </View>
 
-                <View style={styles.card2}>
-                  <Text style={{ ...styles.title, textAlign: 'center', color: '#000000' }}>MELHOR JOGADA DA SEMANA</Text>
-                  <Image source={Clip} style={styles.carrer}/>
-                </View>
+               
 
             </View>
           </View>
@@ -119,7 +121,7 @@ export default function User() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#53212b',
+    backgroundColor: '#bd3944',
     alignItems: 'center',
   },
   center: {
@@ -127,7 +129,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   wall: {
-    maxHeight: 360,
+    maxHeight: 420,
     maxWidth: '100%',
     resizeMode: 'cover',
     bottom: 6,
@@ -145,8 +147,9 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: 25,
     borderRadius: 50,
-    // backgroundColor: '#fffbf5',
-    backgroundColor: '#53212b',
+    //  backgroundColor: '#fffbf5',
+    //  backgroundColor: '#53212b',
+    backgroundColor: '#bd3944',
     bottom: 120,
   },
   card2: {
